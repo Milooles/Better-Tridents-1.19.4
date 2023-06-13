@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-tridents-mod",
+	"version": "${version}",
+	"name": "Better Tridents Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"descroissant"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-tridents-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.descroissant.BetterTridentsMod"
+		],
+		"client": [
+			"net.descroissant.BetterTridentsModClient"
+		],
+		"fabric-datagen": [
+			"net.descroissant.BetterTridentsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-tridents-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
